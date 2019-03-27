@@ -43,26 +43,21 @@ Page({
   // 表单提交
   formSubmit(e) {
     let that = this
-    let val = e.detail.value
-    console.log(val);
-
+    
     let ajxtrue = this.data.ajxtrue;
     console.log(ajxtrue);
-
-    if (ajxtrue == true) {
+    if (ajxtrue == false) {
       //表单提交进行
-      console.log("注册成功！");
-      wx.showToast({
-        title: '注册成功！',
-        icon: 'success',
-        duration: 2000
-      })
-    } else {
       wx.showToast({
         title: '手机号有误',
-        icon:"none",
+        icon: "none",
         duration: 2000
       })
+    }else{
+      let val = e.detail.value
+      console.log(val);
+
+     
     }
   },
 
