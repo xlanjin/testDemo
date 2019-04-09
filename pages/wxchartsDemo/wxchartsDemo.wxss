@@ -1,0 +1,8 @@
+/* pages/wxchartsDemo/wxchartsDemo.wxss */
+.canvas {
+    width: 750rpx;
+    height: 500rpx;
+}
+.canvas2{
+  height: 400rpx;
+} 

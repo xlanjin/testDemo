@@ -1,0 +1,8 @@
+<!--pages/searchZ/searchZ.wxml-->
+<!-- 自定义组件模板的导入 -->
+<!-- <searchTxt id='searchTxt'></searchTxt> -->
+
+<!-- 自定义模板的导入 -->
+<import src='../../template/search/search.wxml' />
+
+<template is='searchs'></template>

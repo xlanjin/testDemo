@@ -1,0 +1,6 @@
+<template name="searchs">
+  <view class='search searchGood'>
+    <input bindinput="searchTxtValue" name="searchTxt" value='{{searchTxt}}' confirm-type='搜索' bindconfirm='searchIcon'></input>
+    <image class="searchIcon goodsSearch" src="/images/search.png"></image>
+  </view>
+</template>

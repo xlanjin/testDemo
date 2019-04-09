@@ -89,6 +89,10 @@ Page({
       })
     }
   },
+  onReady: function () {
+    //获得searchs组件
+    this.searchTxt = this.selectComponent("#searchTxt");
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

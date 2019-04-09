@@ -1,0 +1,33 @@
+<!--pages/leftDelete/leftDelete.wxml-->
+ <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="  {{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="">
+    <view class="content">
+      <view class='com'>
+        <view class='tp'>
+          <image src="{{item.image_src}}" class='img' />
+        </view>
+        <view class='txt'>
+          <view class='tit'>{{item.goods_name}}</view>
+
+          <view class='bot'>
+
+            <block wx:if="{{item.marketable=='true'}}">
+              <view class="pri">
+                <text class="new-price">￥{{item.goods_price}}</text>
+                <text class="old-price">￥{{item.mktprice}}</text>
+              </view>
+              <navigator class='a'>
+                <label class='ti1'>可使用优惠券</label>
+              </navigator>
+            </block>
+            <block wx:else>
+              <navigator class='a'>
+                <label class='ti'>对不起该商品已下架</label>
+              </navigator>
+            </block>
+
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="del" catchtap="del" data-index="{{index}}" data-productid="{{item.product_id}}" data-goodsid="{{item.goods_id}}">删除</view>
+</view>

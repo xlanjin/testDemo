@@ -1,0 +1,2 @@
+<!--pages/wxchartsDemo/wxchartsDemo.wxml-->
+<canvas canvas-id="pieCanvas" disable-scroll="true" class="canvas"></canvas>
