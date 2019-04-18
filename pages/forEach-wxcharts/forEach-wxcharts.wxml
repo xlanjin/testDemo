@@ -1,0 +1,17 @@
+<!--pages/forEach-wxcharts/forEach-wxcharts.wxml-->
+<view class='contairs'>
+  <view class='topContair' wx:for='{{dataInfo}}' wx:key='index'>
+    <view class='left'>
+       <view class='headerTxt'>采购子项号：{{item.subNum}}</view>
+       <view class='footerTxt'>{{item.grade}} /{{item.spec}} /{{item.weight}}吨</view>
+    </view>
+    <view class='right'>
+    <!-- item.id用于遍历 -->
+      <view class='canvasContairs' style='width:70px;height:70px'>
+        <!-- 记得给canvas宽高，否则显示为空白 -->
+        <canvas class="canvas" canvas-id="ringGraph{{ item.id }}"></canvas>
+      </view>
+      
+    </view>
+  </view>
+</view>

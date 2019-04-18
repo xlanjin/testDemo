@@ -14,15 +14,15 @@ var config = {
     yAxisSplit: 5,
     xAxisHeight: 15,
     xAxisLineHeight: 15,
-    legendHeight: 15,
+    legendHeight: 7,
     yAxisTitleWidth: 15,
-    padding: 12,
+    padding: 8,
     columePadding: 3,
-    fontSize: 10,
+    fontSize: 9,
     dataPointShape: ['diamond', 'circle', 'triangle', 'rect'],
     colors: ['#7cb5ec', '#f7a35c', '#434348', '#90ed7d', '#f15c80', '#8085e9'],
-    pieChartLinePadding: 25,
-    pieChartTextPadding: 15,
+    pieChartLinePadding: 5,
+    pieChartTextPadding: 3,
     xAxisTextPadding: 3,
     titleColor: '#333333',
     titleFontSize: 20,
@@ -854,7 +854,12 @@ function drawPieText(series, opts, config, context, radius, center) {
 
     var seriesConvert = series.map(function (item) {
         var arc = 2 * Math.PI - (item._start_ + 2 * Math.PI * item._proportion_ / 2);
-        var text = item.format ? item.format(+item._proportion_.toFixed(2)) : util.toFixed(item._proportion_ * 100) + '%';
+      var text = item.format ? item.data : item.data;
+        console.log('------  text ----',text);
+        // console.log('***********   item.format  ************', item.format);
+      console.log(' ******  数据： *******',item.data)
+
+
         var color = item.color;
         return { arc: arc, text: text, color: color };
     });

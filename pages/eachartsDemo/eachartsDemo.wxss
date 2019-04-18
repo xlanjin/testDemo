@@ -1,54 +1,44 @@
 /* pages/eachartsDemo/eachartsDemo.wxss */
-.topConatir{
- position: absolute;
-  top: 0;
-  bottom: 60%;
-  left: 0;
-  right: 0;
+.topContair{
+  width: 100%;
+  height: 400rpx;
 }
-
-.leftContair{
-  width:47%;
-  padding:0 30rpx;
-  font-size:26rpx;
+.EachartsContair{
+  width: 100%;
+  height: 300rpx;
+  /* background: paleturquoise; */
+  display:flex; 
+  flex-direction:row;
+  justify-content:space-around;
 }
-.titleGift{
-  text-align:center;
-  background:#42A0F7;
-  border-radius:15rpx;
-  padding:10rpx;
+.topLeft{
+  width: 42%;
+  height: 100%;
+  /* background: palegoldenrod; */
 }
-.ReplenishmentList text{
-  display: block;
-  margin-top:15rpx;
-}
-.ReplenishmentList .listItem{
-  width:43%;
-  display:inline-block;
-  text-align:center;
-  background:#42A0F7;
-  border-radius:35rpx;
-  font-size:26rpx;
-  margin-right:25rpx;
-  margin-top:15rpx;
+.topRight{
+  width: 42%;
+  height: 100%;
+  /* background: peachpuff; */
 }
 
 
 
-
-
-.rightContair{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
+/* wxcharts的使用 */
+.bottomContair{
+  width: 100%;
+  height: 600rpx;
+  /* background: peachpuff; */
 }
-
-#mychart-dom-multi-scatter {
-  position: absolute;
-  top: 40%;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.Text{
+  height: 2;
+  line-height: 2;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+/* 记得给canvas宽高，否则显示为空白 */
+.canvas {
+  width: 310px;
+  height: 200px;
 }

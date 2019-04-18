@@ -1,19 +1,25 @@
 <!--pages/eachartsDemo/eachartsDemo.wxml-->
-<view class="container">
-   <!--   饼状图     -->
-  <view class='topConatir'>
-    <view class='leftContair'>
-      <view class='titleGift'>平底锅</view>
-      <view class='ReplenishmentList'>
-        <text>需要补货</text>
-        <view class='listItem'>苹果</view>
-        <view class='listItem'>苹果</view>
-        <view class='listItem'>苹果</view>
+<view class='contentairs'>
+  <!-- 上部分--使用Eacharts -->
+  <view class='topContair'>
+    <view class='Text'>使用-Eacharts插件</view>
+    <view class='EachartsContair'>
+      <view class='topLeft'>
+        <!-- Eacharts插入方式一  -->
+        <ec-canvas id="mychart-dom-multi-pie" canvas-id="mychart-multi-pie" ec="{{ ecBar }}"></ec-canvas>
+      </view>
+      <view class='topRight'>
+        <!-- Eacharts插入方式二  -->
+        <ec-canvas id="mychart-dom-bar" class='mychart-bar' canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
       </view>
     </view>
-    <view class='rightContair'>
-      <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+  </view>
+  <!-- 下部分--使用wxcharts -->
+  <view class='bottomContair'>
+    <view class='Text'>使用-wxcharts插件</view>
+    <view class='wxchartsContair' style='width:310px;height:200px;'>
+      <!-- 记得给canvas宽高，否则显示为空白 -->
+      <canvas class="canvas" canvas-id="lineGraph"></canvas>
     </view>
   </view>
-  <!-- <ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ecScatter }}"></ec-canvas> -->
 </view>

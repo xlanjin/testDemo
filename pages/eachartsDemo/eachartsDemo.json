@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "ec-canvas": "../../ec-canvas/ec-canvas"
+    "ec-canvas": "../../compontents/ec-canvas/ec-canvas"
   },
-  "navigationBarTitleText": "Eacharts图表"
+  "navigationBarTitleText": "图表"
 }

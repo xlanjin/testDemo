@@ -1,0 +1,40 @@
+/* pages/forEach-wxcharts/forEach-wxcharts.wxss */
+page{
+  background: gainsboro;
+}
+.topContair{
+  width: 100%;
+  height: 160rpx;
+  margin-bottom: 30rpx;
+  background: #fff;
+  display:flex; 
+  flex-direction:row;
+  justify-content:space-around;
+}
+.left{
+  width: 60%;
+  height: 100%;
+}
+.headerTxt{
+  height: 3;
+  line-height: 3;
+  font-size: 34rpx;
+  font-weight: bolder
+}
+.footerTxt{
+  height: 1.5;
+  line-height: 1.5;
+  font-size: 30rpx;
+}
+.right{
+  width: 35%;
+  height: 100%;
+  display:flex; 
+  flex-direction:row;
+  justify-content:space-around;
+}
+/* 记得给canvas宽高，否则显示为空白 */
+.canvas {
+  width: 70px;
+  height: 70px;
+}
