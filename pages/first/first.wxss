@@ -1,0 +1,65 @@
+/* pages/first/first.wxss */
+/* pages/first/first.wxss */
+page{
+  height: 100%;
+  width: 100%;
+
+}
+.first-container{
+  height: 100%;
+  display: flex;
+  /* padding-top: 192rpx; */
+  justify-content: center;
+}
+.bg{
+    width: 750rpx;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -3;
+    left: 0;
+}
+.circle-bg{
+  width: 640rpx;
+  height: 651rpx;
+}
+.content-container{
+  margin-top: 132rpx;
+  position: relative;
+}
+.user-area{
+  position: absolute;
+  top:452rpx;
+  left: 0;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 用户的头像和昵称的设置 */
+.wx-avatar{
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+}
+.user-text{
+  color: white;
+  font-size: 36rpx;
+  margin-top: 12rpx;
+}
+/* 导航语以及按钮的设置 */
+.slogan{
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 42rpx;
+}
+.start-btn{
+  background-color: #ff7bc9;
+  width: 254rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: white;
+  margin-top: 95rpx;
+  font-size: 42rpx;
+}

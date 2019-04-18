@@ -1,0 +1,18 @@
+/* pages/common/components/starts/starts.wxss */
+.startsContainer{
+  display:flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  align-items: center;
+  height: 30rpx;
+}
+.starsImg image{
+  width:29rpx;
+  height: 30rpx;
+  margin-right: 4rpx;
+  /* display: inline-block; */
+}
+.startsContainer text{
+  line-height: 30rpx;
+  margin-left: 10rpx;
+}

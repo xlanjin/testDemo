@@ -8,3 +8,5 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.plrtb{padding: 20rpx;}
+.plr{padding: 0 20rpx;}

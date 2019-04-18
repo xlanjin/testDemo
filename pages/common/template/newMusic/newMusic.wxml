@@ -1,0 +1,18 @@
+<template name='newMusic'>
+ <view class='m-sglst'>
+      <view class='m-sgitem'>
+        <view class='sgchfl'>
+          <text class='f-thide sgtl'>Live Your Life</text>
+          <view class='f-thide sginfo'>
+          <view class='image'>
+            <image class='u-hmsprt1 sghot' src='/image/movies/sq.png'></image>
+          </view>
+            <text>于湉--Live Your Life</text>
+          </view>
+        </view>
+        <view class='sgchfr'>
+          <image class='u-hmsprt sgchply' src='/image/movies/vido.png'></image>
+        </view>
+      </view>
+    </view>
+</template>

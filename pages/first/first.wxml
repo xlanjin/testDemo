@@ -1,0 +1,13 @@
+<!--pages/first/first.wxml-->
+<view class='first-container'>
+    <image src='../../image/lineBg.png' mode='scaleToFill' class='bg'></image>
+    <view class='content-container'>
+       <image src='../../image/circleBg.png' class='circle-bg'></image>
+       <view class='user-area'>
+          <image src='{{userInfo.avatarUrl}}' class='wx-avatar'></image>
+          <text class='user-text'>{{userInfo.nickName}}</text>
+      </view>
+      <text class='slogan'>想你所想,看你所看</text>
+      <button class='start-btn' catchtap='enterIndex'>开启吧</button>
+    </view>
+</view>

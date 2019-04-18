@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "电影",
+    "navigationBarBackgroundColor": "#20cf83",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+      "starts": "/pages/common/components/starts/starts"
+    }
+}

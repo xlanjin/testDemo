@@ -1,0 +1,5 @@
+<!--电影--更多列表-->
+ <import src='../../common/template/movieList/movieList.wxml'/>
+<view class='movieMoreContainer'>
+    <template is='movieList' data='{{...item}}' wx:for='{{allClsMovies}}' wx:key='index'/>
+</view> 

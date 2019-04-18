@@ -1,0 +1,13 @@
+<!--【新闻--详情页】-->
+<view class='infoTitle'>
+  <text class='titleH3'>{{itemIdList.title}}</text>
+  <text class='headerEdtor'>{{itemIdList.time}}  {{iitemIdListtem.writer}}</text>
+  <image wx:if='{{collected}}' src='/image/tabIcon/collectSel.png' catchtap='collectTap'></image>
+  <image wx:else src='/image/tabIcon/collect.png' catchtap='collectTap'></image>
+</view>
+<view class='bigImages'>
+  <image src='{{itemIdList.images.large}}'></image>
+  <view class='text'>
+    <text>{{itemIdList.content}}</text>
+  </view>
+</view>

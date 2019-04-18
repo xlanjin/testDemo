@@ -1,0 +1,12 @@
+<template name='newsInfo'>
+    <view class='big' data-id='{{item.id}}' catchtap='toNewsContent'>
+      <image src='{{item.images.large}}' class='tu'></image>
+     <view class='you'>
+     <text class='title1'>{{item.title}}</text>
+     <view class="neirong">
+     <text class='text2'>{{item.content}}</text>
+     </view>
+     </view>
+   </view>
+
+</template>

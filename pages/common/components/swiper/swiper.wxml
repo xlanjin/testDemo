@@ -1,0 +1,12 @@
+<!--轮播图-->
+ <swiper autoplay='{{autoplay}}' interval='3000' indicator-dots='{{false}}' indicator-active-color='#ff7bc9' indicator-color='#fff' circular='true' class='scrollArea'  bindchange='goPic' current='{{currentIndex}}'>
+  <swiper-item wx:for='{{newsDataList}}' wx:key='index' bindtap="_toPar" data-nid='{{item.id}}' data-ave="{{item.rating.average}}">
+    <image src='{{item.images.large}}' mode='aspectFill'></image>
+    <view>
+      <text>{{item.title}}</text>
+    </view>
+  </swiper-item>
+</swiper> 
+<view class='swiperDotArea'>
+    <view class='swiperDot {{currentIndex==index?"selectedCurrent":""}}' wx:for='{{newsDataList}}' wx:key='index' data-cur='{{index}}' bindtap='tapdot'></view>
+</view>

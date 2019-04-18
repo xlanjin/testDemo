@@ -1,0 +1,84 @@
+/* pages/movies/moviesXq/moviesXq.wxss */
+@import "/pages/common/template/titlePanel/titlePanel.wxss";
+@import "/pages/common/template/movieList/movieList.wxss";
+
+.imgs image {
+  width: 750rpx;
+  height: 300rpx;
+}
+
+.xq1 {
+  margin-left: 10rpx;
+}
+
+.moviesTitle {
+  font-size: 57rpx;
+}
+
+.pt {
+  padding-top: 5rpx;
+  color: #666;
+}
+
+.js {
+  width: 95%;
+  padding: 20rpx;
+  border-top: 1px solid darkgrey;
+  font-size: 42rpx;
+  color: #999;
+  text-indent: 2em;
+}
+
+.actor {
+  margin-top: 10rpx;
+}
+
+.movieDetailContainer {
+  width: 1460rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid gray;
+  padding-left: 10rpx;
+}
+
+.peoList {
+  width: 220rpx;
+  margin: 10rpx 14rpx;
+}
+
+.peoList image {
+  width: 220rpx;
+  height: 300rpx;
+}
+
+.peoName {
+  text-align: center;
+}
+
+.movieListContainer {
+  white-space: nowrap;
+  display: flex;
+}
+
+.border {
+  border-top: 1px solid darkgrey;
+}
+
+.startAve {
+  padding-top: 5rpx;
+  color: #666;
+  width: 100%;
+  height: 50rpx;
+  
+}
+
+.ave {
+  float: left;
+  /* position: relative; */
+}
+
+.starts {
+  float: left;
+  /* position: absolute;
+  top: 10rpx; */
+}

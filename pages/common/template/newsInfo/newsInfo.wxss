@@ -1,0 +1,27 @@
+.big{display:flex;height: 100%;padding: 20rpx;border-top: 1px solid rgb(175,175,175);overflow: hidden;}
+.tu{width:310rpx;height: 190rpx;align-items:center;}
+.you{padding-left:30rpx; width:400rpx;overflow: hidden;}
+.title1{
+  width:400rpx;
+  height: 40rpx;
+  font-size: 32rpx;
+  /* 文字的单行省略 */
+   overflow:hidden;
+    -webkit-line-clamp:1;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+}
+.neirong{
+  width:400rpx;height: 130rpx;
+  overflow: hidden
+}
+.text2{
+  color:rgb(175,175,175);
+  font-size:27rpx;
+  /* 指定多行文字的省略 */
+  -webkit-line-clamp:3;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  margin-top:20rpx;
+}
+

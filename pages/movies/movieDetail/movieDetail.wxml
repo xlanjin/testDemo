@@ -1,0 +1,38 @@
+<!--电影---详情页-->
+<import src='/pages/common/template/titlePanel/titlePanel.wxml' />
+<import src='/pages/common/template/movieList/movieList.wxml' />
+<view class='xqContainer'>
+  <view class='imgs'>
+    <image src='{{movieAllInfo.introImg}}' mode="aspectFill" catchtap='viewBigImg' data-imgSrc='movieAllInfo.introImg'></image>
+  </view>
+  <view class='xq1'>
+    <view class='moviesTitle'>{{movieAllInfo.introTitle}}</view>
+    <view class='startAve'>
+      <text class='ave'>评分：</text>
+      <starts class='starts' id='starts' average='{{movieAllInfo.average}}' starts='{{movieAllInfo.scores}}'></starts>
+    </view>
+    <view class='pt'>导演：
+      <text>{{movieAllInfo.actors}}</text>
+    </view>
+    <view class='pt'>主演：
+      <text>{{movieAllInfo.casts}}</text>
+    </view>
+    <view class='pt'>类型：
+      <text>{{movieAllInfo.mvType}}</text>
+    </view>
+    <view class='pt'>地区：
+      <text>{{movieAllInfo.countries}}</text>
+    </view>
+  </view>
+  <view>
+    <template is='titlePanel' data='{{...synopsis}}' />
+    <view class='js'>{{movieAllInfo.intro}}</view>
+  </view>
+  <!-- 演员阵容 -->
+  <template is='titlePanel' data='{{...cast}}' />
+  <scroll-view scroll-x="true" class='movieListContainer'>
+    <view class='border'>
+      <template is='movieList' wx:for='{{movieAllInfo.castsInfo}}' wx:key='index' data='{{...item}}' />
+    </view>
+  </scroll-view>
+</view>

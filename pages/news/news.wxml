@@ -1,0 +1,34 @@
+<!--pages/news/news.wxml-->
+<!-- <import src='/pages/common/template/swiper/swiper.wxml' /> -->
+<import src='/pages/common/template/titlePanel/titlePanel.wxml' />
+<import src='/pages/common/template/newsInfo/newsInfo.wxml' />
+<view class='newsContainer'>
+  <!-- 轮播图开始  组件 -->
+  <!-- <template is='swiper' data='{{newsDataList}}' /> -->
+   <swiperCom id='swiperCom' newsDataList='{{newsDataList}}' bindtoPagePar="toParMovie"></swiperCom>
+  <!-- 轮播图结束 -->
+  <!-- 热门新闻开始 -->
+  <template is='titlePanel' data='{{...hotTitle}}' />
+  <view>
+    <block wx:for='{{hotList}}' wx:key='index'>
+      <template is='newsInfo' data='{{item}}'/>
+    </block>
+  </view>
+  <!-- 热门新闻结束 -->
+  <!-- 推荐新闻开始 -->
+  <template is='titlePanel' data='{{...recomTitle}}' />
+  <view>
+    <block wx:for='{{recomList}}' wx:key='index'>
+      <template is='newsInfo' data='{{item}}'/>
+    </block>
+  </view>
+  <!-- 推荐新闻结束 -->
+  <!-- 全部新闻开始 -->
+  <template is='titlePanel' data='{{...newsTitle}}' />
+  <view>
+    <block wx:for='{{newsList}}' wx:key='index'>
+      <template is='newsInfo' data='{{item}}' />
+    </block>
+  </view>
+  <!-- 全部新闻结束 -->
+</view>

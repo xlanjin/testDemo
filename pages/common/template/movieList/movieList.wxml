@@ -1,0 +1,9 @@
+<template name='movieList'>
+  <view class='view-scroll' style='display: inline-block;' catchtap='tapInfo' data-id='{{id}}'>
+    <image src='{{images.large}}' class='dyt'></image>
+    <view class='title'>{{title}}</view>
+    <view class='title' wx:if='{{!showStarts}}'>
+      <starts id='starts' average='{{rating.average}}' starts='{{rating.stars}}'></starts>
+    </view>
+  </view>
+</template>

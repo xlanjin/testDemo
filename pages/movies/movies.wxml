@@ -1,0 +1,40 @@
+<!--电影--页面-->
+<import src='/pages/common/template/titlePanel/titlePanel.wxml' />
+<import src='/pages/common/template/movieList/movieList.wxml' />
+<view class='bigB'>
+  <!-- 搜索开始 -->
+  <view class='headerSearch'>
+    <icon type='search' size='20' color="#9e9e9e"></icon>
+    <input placeholder="《21克拉》" confirm-type='search' bindinput='searchBindInput' bindfocus='searchBindFocus' bindconfirm='searchBindFirm' placeholder-class='placeholder' />
+  </view>
+  <!-- 搜索结束 -->
+  <view class='searchDetail' wx:if='{{searchDetail}}'>
+    <template is='movieList' data='{{...item}}' wx:for='{{searchList.moviesCls}}' wx:key='index' />
+  </view>
+  <view class='movieDetail' wx:if='{{movieDetail}}'>
+    <!-- 轮博图开始 -->
+    <view class='swiperInfo'>
+      <swiperCom id='swiperCom' newsDataList='{{commingSoonList.swiperCls}}' bindtoPagePar="toParMovie"></swiperCom>
+    </view>
+    <!-- 轮播图结束 -->
+    <!-- 正在上映开始 -->
+    <template is='titlePanel' data='{{...nowPlayTitle}}' />
+    <scroll-view scroll-x="true" class='movieListContainer'>
+      <template is='movieList' wx:for='{{nowPlayingList.moviesCls}}' wx:key='index' data='{{...item}}' />
+    </scroll-view>
+    <!-- 正在上映结束 -->
+    <!-- 即将上映开始 -->
+    <template is='titlePanel' data='{{...commingTitle}}' />
+    <scroll-view scroll-x="true" class='movieListContainer'>
+      <template is='movieList' wx:for='{{commingSoonList.moviesCls}}' wx:key='index' data='{{...item}}' />
+    </scroll-view>
+    <!-- 即将上映结束 -->
+    <!-- top250开始 -->
+    <template is='titlePanel' data='{{...topTitle}}' />
+    <scroll-view scroll-x="true" class='movieListContainer'>
+      <template is='movieList' data='{{...item}}' wx:for='{{top250List.moviesCls}}' wx:key='index' />
+    </scroll-view>
+    <!-- top250结束 -->
+  </view>
+
+</view>

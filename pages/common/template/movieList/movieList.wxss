@@ -1,0 +1,18 @@
+.scrollView>view{margin-left: 10rpx;}
+.dyt{width:231rpx;height: 346rpx;}
+.title{
+  font-size: 28rpx;height: 37rpx;line-height: 37rpx;
+   overflow:hidden;
+    -webkit-line-clamp:1;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  }
+
+.view-scroll{
+  display: inline-block;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  width: 230rpx;
+  height: 430rpx;
+}

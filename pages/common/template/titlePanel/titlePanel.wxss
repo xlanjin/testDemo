@@ -1,0 +1,29 @@
+.plrtb{
+  width: 711rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.text{
+  width: 600rpx;
+  font-size: 35rpx;
+  display: flex;
+  /* 设置字体的垂直居中 */
+  flex-direction: row;
+  align-items: center;
+  float: left;
+}
+.text .textIcon{
+  width: 10rpx;
+  height: 37rpx;
+  background-color: orange;
+  
+}
+.plr{
+  float: left; 
+}
+.more{
+  width: 100rpx;
+  font-size: 30rpx;
+  color: gainsboro;
+  float: right;
+}

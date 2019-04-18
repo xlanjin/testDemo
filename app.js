@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    //电影数据请求URL
+    dbUrl:"https://douban.uieee.com"  
   }
 })

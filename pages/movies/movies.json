@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText":"电影",
+  "navigationBarBackgroundColor":"#20cf83",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "swiperCom": "/pages/common/components/swiper/swiper",
+    "starts":"/pages/common/components/starts/starts"
+  }
+}

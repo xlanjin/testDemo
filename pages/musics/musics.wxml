@@ -1,0 +1,28 @@
+<!--pages/musics/musics.wxml-->
+<import src='/pages/common/template/titlePanel/titlePanel.wxml' />
+<import src='/pages/common/template/movieList/movieList.wxml' />
+<import src='/pages/common/template/newMusic/newMusic.wxml' />
+<!-- 音乐标题开始 -->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==index? 'selected' : ''}}" wx:for='{{musicTitle}}' data-current='{{index}}' catchtap='getInd' wx:key="index">{{item}}</view>
+</view>
+<!-- 音乐标题结束 -->
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:1500rpx;" bindchange="swiperTab">
+  <!--推荐音乐 -->
+  <swiper-item>
+    <template is='titlePanel' data='{{...recommend}}' />
+    <view class='remmoned'>
+      <template is='movieList' wx:for='{{newsDataList}}' wx:key='index' data='{{...item}}' />
+    </view>
+    <template is='titlePanel' data='{{...newSong}}' />
+    <template is="newMusic"/>
+  </swiper-item>
+  <!-- 热歌榜 -->
+  <swiper-item>
+    <view>热歌榜</view>
+  </swiper-item>
+  <!-- 搜索 -->
+  <swiper-item>
+    <view>搜索</view>
+  </swiper-item>
+</swiper>

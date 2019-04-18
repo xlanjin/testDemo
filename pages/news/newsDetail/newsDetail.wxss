@@ -1,0 +1,39 @@
+/* pages/news/newsDetail/newsDetail.wxss */
+.infoTitle{
+  width: 680rpx;
+  height: 155rpx;
+  padding: 35rpx;
+  position: relative;
+}
+.titleH3{
+  width: 100%;
+  font-size: 40rpx;
+  color: #333333;
+  display: block;
+}
+.headerEdtor{
+  width: 387rpx;
+  font-size: 30rpx;
+  color: #999;
+  float: left;
+  margin-top: 25rpx;
+}
+.infoTitle image{
+  width: 75rpx;
+  height: 75rpx;
+  position: absolute;
+  bottom:14px;
+  right:25rpx;
+ 
+}
+.bigImages image{
+  width: 100%;
+  height: 414rpx;
+}
+.text{
+  padding: 29rpx;
+}
+.text text{
+  color: #656565;
+  font-size: 30rpx;
+}

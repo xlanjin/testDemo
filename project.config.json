@@ -1,17 +1,19 @@
 {
 	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.94",
-	"appid": "wxaa2cf685ecd0f92c",
-	"projectname": "Demo",
-	"isGameTourist": false,
+	"libVersion": "1.9.98",
+	"appid": "wx0e888e71ec221f1f",
+	"projectname": "SmallWei",
 	"condition": {
 		"search": {
 			"current": -1,

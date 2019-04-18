@@ -1,0 +1,9 @@
+<template name='titlePanel'>
+  <view class='titleContainer plrtb'>
+    <view class='text'>
+      <text class='textIcon'></text>
+      <text class='plr'>{{title}}</text>
+    </view>
+    <view class='text more' wx:if='{{more}}' catchtap="tapMore" data-title="{{title}}">更多>></view>
+    </view>
+</template>

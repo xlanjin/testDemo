@@ -1,0 +1,9 @@
+<!--pages/common/components/starts/starts.wxml-->
+<view class='startsContainer'>
+  <view class='starsImg' wx:for='{{startArr}}' wx:key='index'>
+    <image src='/image/start/start1.png' wx:if='{{item==1}}'></image>
+    <image wx:elif='{{item==2}}' src='/image/start/start2.png'></image>
+    <image wx:else src='/image/start/start3.png'></image>
+  </view> 
+   <text>{{average}}</text> 
+</view>

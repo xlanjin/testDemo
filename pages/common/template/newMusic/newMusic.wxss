@@ -1,0 +1,52 @@
+.m-sglst{
+  height: 80rpx;
+  border-top: 1rpx solid gainsboro;
+}
+.m-sgitem {
+    height:110rpx;
+    /* line-height: 60rpx; */
+    padding-left: 25rpx;
+    position: relative;
+}
+.image{
+  display: inline-block;
+}
+.sgchfl {
+    padding: 6rpx 0;
+    float: left;
+}
+.sgchfr {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0 10rpx;
+    width: 50rpx;
+    float: right;
+}
+.sgchply {
+    display: inline-block;
+    width: 55rpx;
+    height: 55rpx;
+    position: absolute;
+    top: 35rpx;
+    right: 30rpx;
+}
+.f-thide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: normal;
+}
+.sgtl {
+    font-size:31rpx;
+}
+.sghot {
+    display: inline-block;
+    width: 27rpx;
+    height: 20rpx;
+    margin-right: 4rpx;
+}
+.sginfo{
+  font-size: 22rpx;
+  color:#666;
+}

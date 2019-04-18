@@ -1,0 +1,14 @@
+/*引入-单个电影信息的样式 */
+@import "../../common/template/movieList/movieList.wxss";
+.movieMoreContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    border-top:none;
+}
+.movieMoreContainer .movieList{
+    width:224rpx;
+}
+.movieMoreContainer .movieImg{
+    width:224rpx;
+}

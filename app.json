@@ -1,19 +1,45 @@
 {
   "pages": [
-    "pages/eachartsDemo/eachartsDemo",
-    "pages/wxchartsDemo/wxchartsDemo",
-    
-    "pages/searchZ/searchZ",
-    "pages/index/index",
-    "pages/moveDele/moveDele",
-    "pages/leftDelete/leftDelete",
-    "pages/logs/logs"
-    
+
+    "pages/musics/musics",
+    "pages/first/first",
+    "pages/news/news",
+    "pages/movies/movies",
+
+    "pages/news/newsDetail/newsDetail",
+    "pages/movies/movieDetail/movieDetail",
+    "pages/movies/moviesMore/moviesMore"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#bde51b",
+    "navigationBarTitleText": "想你所想",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#036d88",
+    "backgroundColor": "#efefef",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "iconPath": "image/tabIcon/news.png",
+        "selectedIconPath": "image/tabIcon/news_sel.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "image/tabIcon/film.png",
+        "selectedIconPath": "image/tabIcon/movie_sel.png"
+      },
+      {
+        "pagePath": "pages/musics/musics",
+        "text": "音乐",
+        "iconPath": "image/tabIcon/music.png",
+        "selectedIconPath": "image/tabIcon/music_sel.png"
+      }
+    ]
   }
 }
