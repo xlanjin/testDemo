@@ -1,0 +1,110 @@
+@import "/templates/goodsList/goodsList.wxss"; 
+/* pages/goods/goods.wxss */
+page{
+  background: #f0efef;
+}
+.item{
+  overflow: hidden;
+}
+.navTitle{
+  overflow: hidden;
+  padding: 20rpx 3%; 
+  background: #993366;
+  color:#fff;
+  font-size:24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navTitle .join{
+  display: inline-block;
+  text-align: center;
+}
+.mr20{
+  margin-right: 20rpx;
+}
+.navTitle .join image{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+}
+.navTitle .join text{
+  display: block;
+  font-size: 20rpx;
+  margin-right: 0;
+}
+.head-img {
+  float:left;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+.titleNumber{
+  margin-left:140rpx;
+  margin-top:20rpx;
+}
+.titleNumber view{
+  display: block;
+}
+.navTitle text{
+  display: inline-block;
+  margin-right: 20rpx;
+  font-size:26rpx;
+}
+.switch{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.switch image{
+  display: inline-block;
+  width: 25rpx;
+  height: 25rpx;
+}
+.iconList{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  padding: 25rpx 0;
+}
+.itemList{
+  background: #fff;
+  padding: 15rpx 0;
+  margin-top: 20rpx;
+}
+.listTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:15rpx; 
+  line-height: 2;
+  font-size:30rpx;
+}
+.iconItem{
+  text-align: center;
+}
+.iconList image{
+  display: inline-block;
+  width:60rpx;
+  height:60rpx;
+  /*border:solid 1px #ccc;
+  border-radius:50%;
+  padding:20rpx;*/
+}
+.iconItem .iconTitle{
+  display: block;
+  font-size: 26rpx;
+  line-height: 1.6;
+}
+
+.itemList{
+  padding: 3rpx;
+}
+
+
+
+
+

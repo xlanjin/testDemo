@@ -1,0 +1,23 @@
+<!--pages/goods/goods.wxml-->
+<import src='/templates/goodsList/goodsList.wxml' />
+<view>
+  <!-- itemList -->
+  <view class="itemList">
+    <view class="listTitle">
+      <text>礼品目录</text>
+    </view>
+    <view class="proList">
+      <view class="item" wx:if="{{proList.length!=0}}">
+        <!--proList-->
+        <!-- 引用模板开始 注意数据值：如果需要在嵌套的模板中传入多个数据，可以将每个数据用逗号隔开。-->
+        <template is='goodsList' data='{{item,isAdmin}}' wx:for='{{proList}}' wx:key='index'/>
+        <!-- 引用模板结束 -->
+        <view class="footerWord" wx:if="{{hasMoreData==false}}">
+          <view class="footerText">好物就这么多啦！抓紧时间兑换吧！</view>
+        </view>
+      </view>
+      <!--proList-->
+    </view>
+  </view>
+  <!-- itemList -->
+</view>

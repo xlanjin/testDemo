@@ -1,0 +1,39 @@
+<template name='goodsList'>
+  <view class="proItem" data-uid='{{item.uid}}' data-amount='{{item.remainingAmount}}' data-status='{{item.status}}' catchtap="onDetail">
+    <view class="itemImg">
+      <view class="itemPic" wx:if="{{item.coverImg}}">
+        <image mode="aspectFit" style="width:98%;height:200rpx;" class="pro-logo" src="{{item.coverImg}}"></image>
+        <view class="tag" wx:if='{{item.status}}'>
+          <view wx:if="{{item.status=='EFFECTIVE'}}">
+            <image src="/image/goodsList/tag1.png"></image>
+            <view class="statusBtn">已上架</view>
+          </view>
+          <view wx:elif="{{item.status=='EXPIRED'}}">
+            <image src="/image/goodsList/tag3.png"></image>
+            <view class="statusBtn">已下架</view>
+          </view>
+          <view wx:else>
+            <image src="/image/goodsList/tag4.png"></image>
+            <view class="statusBtn">即将上架</view>
+          </view>
+        </view>
+      </view>
+      <view class="itemPic" wx:else>
+        <image mode="aspectFit" style="width:98%;height:200rpx;" class="pro-logo" src='/images/giftDefault.png'></image>
+      </view>
+    </view>
+    <view class="pro-body">
+      <view class="pro-title">{{item.desc}}</view>
+      <!--<view class="pro-title">XX礼品发行机构</view>-->
+      <view class="pro-desc" wx:if='{{isAdmin}}'>
+        剩余
+        <text>{{item.remainingAmount}}</text>(可分配
+        <text>{{item.assignableAmount}}</text>)
+      </view>
+      <view class="pro-desc" wx:else>
+        剩余
+        <text>{{item.remainingAmount}}</text>
+      </view>
+    </view>
+  </view>
+</template>
