@@ -1,0 +1,57 @@
+<!--pages/projectsExamples/projectsExamples.wxml-->
+<view class="detail" style="{{contentEmpty}}">
+  <!-- top  -->
+  <view class='topConatir'>
+    <view class='leftContair'>
+      <view class='titleGift' bindtap='activeType'>大大怪--将军</view>
+      <view class='ReplenishmentList' style='display:none;'>
+        <text>需要补货</text>
+        <view class='listItem'>苹果</view>
+        <view class='listItem'>苹果</view>
+        <view class='listItem'>苹果</view>
+      </view>
+    </view>
+    <view class='rightContair' style='width:{{canvasWidth}}px;height:{{canvasHeight}}px;left:{{canvasLeft}}%'>
+      <ec-canvas id="mychart-dom-multi-pie" canvas-id="mychart-multi-pie" ec="{{ ecBar }}"></ec-canvas>
+    </view>
+  </view>
+  <!--  content  -->
+  <view class='contConatir'>
+    <view class='totalNumTxt'>总计</view>
+    <view class='catalogue'>
+      <view class='totalNumTxt siteText'>站点统计</view>
+      <!-- <view class='listItem' wx:for='{{listItemStyle}}' wx:key='unique'>
+        <view class='listShow {{activeBtn==index?"btnGray":""}}' style='background:{{item.color}}'  data-index='{{index}}' data-rout='{{item.rout}}' ></view>
+        <view class='iconTitle'>{{item.title}}</view>
+      </view> -->
+    </view>
+  </view>
+  <!--  bottom  -->
+  <!-- 方案一：显示饼图图表 -->
+  <!-- <view class='bottomConatir'>
+    <view wx:if='{{storeLists.length!=0}}' style='height:{{bottomHeight}}rpx;'>
+      <view class='storesLiist' wx:for="{{storeLists}}" wx:key='{{index}}'>
+        <view style='width:340rpx;height:240rpx;display:block;'>
+          <canvas class="canvas" canvas-id="ringGraph{{index}}" style='display:block;'></canvas>
+        </view>
+        <view class='iconTitle storesText'>{{item.name}}</view>
+      </view>
+    </view>
+  </view> -->
+
+  <!-- 方案二：现实表格 -->
+  <view class='bottomConatir'>
+    <view class="bg-w navContair">
+      <view class='th iconTitle' wx:for='{{listItemStyle}}' wx:key='index'>{{item.title}}</view>
+    </view>
+    <block wx:for="{{storeLists}}" wx:key="{{index}}">
+      <view class="tr {{index % 2 == 0?'gactiveBg':''}}">
+        <view class="td listName">{{item.name}}</view>
+        <view class="td">{{item.redeemed}}</view>
+        <view class="td">{{item.remaining}}</view>
+        <view class="td">{{item.delivered}}</view>
+        <view class="td">{{item.delivering}}</view>
+      </view>
+    </block>
+  </view>
+</view>

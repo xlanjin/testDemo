@@ -1,5 +1,8 @@
 {
   "pages": [
+    
+    "pages/newTu/newTu",
+    "pages/projectsExamples/projectsExamples",
     "pages/eachartsDemo/eachartsDemo",
     "pages/forEach-wxcharts/forEach-wxcharts"
   ],
@@ -8,5 +11,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

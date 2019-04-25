@@ -14,6 +14,11 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const toThousands = num =>{
+  return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  toThousands: toThousands
 }
