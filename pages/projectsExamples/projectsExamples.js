@@ -4,7 +4,7 @@
 import * as echarts from '../../utils/echarts';
 import util from "../../utils/util";
 //首先引入wxcharts.js插件
-var wxCharts = require("../../utils/wxcharts.js");
+const CHARTS = require('../../utils/wxcharts.js');
 //定义记录初始屏幕宽度比例，便于初始化
 var windowW = 0;
 
@@ -228,6 +228,21 @@ Page({
    */
   onShow: function () {
     // this.onReady();
+    
+    new CHARTS({
+      canvasId: 'canvas1',
+      type: 'pie',
+      series: [{ 
+        name: '一班', data: 50
+      }, { 
+        name: '二班', data: 30 
+      }, {
+        name: '三班', data: 20 
+      }],
+      width: 240,
+      height: 200,
+      dataLabel: true,
+    });
   },
 
   /**
@@ -289,10 +304,10 @@ function getPieZ() {
         center: ['51%', '42%'],
         /* 图表的数据 */
         data: [
-          { value: 32, name: '剩余', itemStyle: { color: '#EA3F25' } },
-          { value: 27, name: '已兑换', itemStyle: { color: '#42A0F7' } },
-          { value: 30, name: '配送站', itemStyle: { color: '#81D452' } },
-          { value: 42, name: '配送数', itemStyle: { color: '#F1BB41' } }
+          { value: 0, name: '剩余:0', itemStyle: { color: '#EA3F25' } },
+          { value: 0, name: '已兑换:0', itemStyle: { color: '#42A0F7' } },
+          { value: 0, name: '配送站:0', itemStyle: { color: '#81D452' } },
+          { value: 0, name: '配送数:0', itemStyle: { color: '#F1BB41' } }
         ]
       }
     ]

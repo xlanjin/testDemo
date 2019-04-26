@@ -12,7 +12,8 @@
       </view>
     </view>
     <view class='rightContair' style='width:{{canvasWidth}}px;height:{{canvasHeight}}px;left:{{canvasLeft}}%'>
-      <ec-canvas id="mychart-dom-multi-pie" canvas-id="mychart-multi-pie" ec="{{ ecBar }}"></ec-canvas>
+      <!-- <ec-canvas id="mychart-dom-multi-pie" canvas-id="mychart-multi-pie" ec="{{ ecBar }}"></ec-canvas> -->
+      <canvas canvas-id="canvas1"></canvas>
     </view>
   </view>
   <!--  content  -->

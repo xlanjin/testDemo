@@ -7,9 +7,9 @@
     </view>
     <view class='right'>
     <!-- item.id用于遍历 -->
-      <view class='canvasContairs' style='width:70px;height:70px'>
+      <view class='canvasContairs' style='width:170px;height:170px'>
         <!-- 记得给canvas宽高，否则显示为空白 -->
-        <canvas class="canvas" canvas-id="ringGraph{{ item.id }}"></canvas>
+        <canvas class="canvas" canvas-id="ringGraph{{index}}"></canvas>
       </view>
       
     </view>
