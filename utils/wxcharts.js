@@ -855,10 +855,6 @@ function drawPieText(series, opts, config, context, radius, center) {
     var seriesConvert = series.map(function (item) {
         var arc = 2 * Math.PI - (item._start_ + 2 * Math.PI * item._proportion_ / 2);
       var text = item.format ? item.data : item.data;
-        console.log('------  text ----',text);
-        // console.log('***********   item.format  ************', item.format);
-      console.log(' ******  数据： *******',item.data)
-
 
         var color = item.color;
         return { arc: arc, text: text, color: color };

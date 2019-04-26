@@ -1,10 +1,9 @@
 {
   "pages": [
-    
+    "pages/forEach-wxcharts/forEach-wxcharts",
     "pages/newTu/newTu",
     "pages/projectsExamples/projectsExamples",
-    "pages/eachartsDemo/eachartsDemo",
-    "pages/forEach-wxcharts/forEach-wxcharts"
+    "pages/eachartsDemo/eachartsDemo"
   ],
   "window": {
     "backgroundTextStyle": "light",

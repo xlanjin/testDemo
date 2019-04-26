@@ -62,16 +62,16 @@ Page({
     bottomHeight: null,
 
     storeLists: [{
-      remaining: 20,
-      redeemed: 11,
-      delivering: 9,
-      delivered: 4,
+      remaining: 25,
+      redeemed: 10,
+      delivering: 12,
+      delivered: 3,
       name: '泡泡糖-N'
     }, {
-      remaining: 20,
-      redeemed: 13,
-      delivering: 2,
-      delivered: 7,
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
       name: '泡泡糖-V大大大大哒哒'
     }, {
       remaining: 25,
@@ -80,24 +80,54 @@ Page({
       delivered: 3,
       name: '泡泡糖-F'
     }, {
-      remaining: 210,
-      redeemed: 110,
-      delivering: 79,
-      delivered: 34,
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
       name: '泡泡糖-D'
     }, {
-      remaining: 100,
-      redeemed: 31,
-      delivering: 29,
-      delivered: 14,
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
       name: '泡泡糖-A'
     }, {
-      remaining: 40,
-      redeemed: 21,
-      delivering: 16,
-      delivered: 18,
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
       name: '泡泡糖-L'
-    }],
+      }, {
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
+        name: '泡泡糖-M'
+      }, {
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
+        name: '泡泡糖-U'
+      }, {
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
+        name: '泡泡糖-Y'
+      }, {
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
+        name: '泡泡糖-M'
+      }, {
+        remaining: 25,
+        redeemed: 10,
+        delivering: 12,
+        delivered: 3,
+        name: '泡泡糖-U'
+      }],
 
   },
 
@@ -151,11 +181,8 @@ Page({
    * 
    */
   activeType: function () {
-    wx.setStorageSync('isProduct', 'true')
-    /* 清除本地存储，以防跳错页面 */
-    wx.removeStorageSync("isInfoActivity");
     wx.navigateTo({
-      url: '/pages/activityGift/activityGift',
+      url: '/pages/eachartsDemo/eachartsDemo',
     })
   },
 
@@ -172,7 +199,7 @@ Page({
     }
 
     /**********************   计算站点区域的高度  **********************/
-    let bottomHeight = (Math.ceil(stores.length / 2)) * 300;
+    let bottomHeight = ((Math.ceil(stores.length / 2)) * 300)+80;
     that.setData({
       bottomHeight: bottomHeight
     })
@@ -267,31 +294,31 @@ Page({
 /* 此函数定义在外面则是在data中定义初始图表 */
 function getPieZ() {
   return {
-    tooltip: {
-      trigger: 'item',
-      formatter: "{a} <br/>{b} : {c} ({d}%)"
+    legend: {
+      type: 'scroll',
+      orient: 'vertical',
+      right: 15,
+      top: 30,
+      // bottom: 20
     },
-    series: [
-      {
-        name: '访问来源',
-        type: 'pie',
+    series: [{
+      name: '访问来源',
+      type: 'pie',
         /* 调整图表的整体大小 */
-        radius: '62%',
-
-        labelLine: {
-          length: 4,
-          length2: 4
-        },
+      radius: '62%',
+      labelLine: {
+        length: 4,
+        length2: 4
+      },
         /* 调整图表的在区域内的位置 */
-        center: ['51%', '42%'],
+      center: ['33%', '40%'],
         /* 图表的数据 */
-        data: [
-          { value: 32, name: '剩余:32', itemStyle: { color: '#EA3F25' }, label: { fontSize: 10 } },
-          { value: 27, name: '已兑换:27', itemStyle: { color: '#42A0F7' }, label: { fontSize: 10 } },
-          { value: 30, name: '配送站:30', itemStyle: { color: '#81D452' }, label: { fontSize: 10 } },
-          { value: 42, name: '配送数:42', itemStyle: { color: '#F1BB41' }, label: { fontSize: 10 } }
-        ]
-      }
-    ]
+      data: [
+        { value: 328, name: '剩余:328', itemStyle: { color: '#EA3F25' }, label: { fontSize: 10 } },
+        { value: 40, name: '已兑换:40', itemStyle: { color: '#42A0F7' }, label: { fontSize: 10 } },
+        { value: 17, name: '配送中:17', itemStyle: { color: '#81D452' }, label: { fontSize: 10 } },
+        { value: 131, name: '已配送:131', itemStyle: { color: '#F1BB41' }, label: { fontSize: 10 } }
+      ]
+    }]
   }
 }

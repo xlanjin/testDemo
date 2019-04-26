@@ -1,7 +1,7 @@
 <!--pages/forEach-wxcharts/forEach-wxcharts.wxml-->
 <view class='contairs'>
   <view class='topContair' wx:for='{{dataInfo}}' wx:key='index'>
-    <view class='left'>
+    <view class='left' bindtap='onDetail'>
        <view class='headerTxt'>采购子项号：{{item.subNum}}</view>
        <view class='footerTxt'>{{item.grade}} /{{item.spec}} /{{item.weight}}吨</view>
     </view>
