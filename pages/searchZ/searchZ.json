@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "搜索组件页",
-  "usingComponents": {
-    "searchTxt": "../../components/search/search"
-  }
-}

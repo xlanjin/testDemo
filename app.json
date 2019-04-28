@@ -1,19 +1,12 @@
 {
   "pages": [
-    "pages/eachartsDemo/eachartsDemo",
-    "pages/wxchartsDemo/wxchartsDemo",
-    
-    "pages/searchZ/searchZ",
-    "pages/index/index",
-    "pages/moveDele/moveDele",
-    "pages/leftDelete/leftDelete",
-    "pages/logs/logs"
-    
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
-  }
+    "navigationBarBackgroundColor": "#bde51b",
+    "navigationBarTitleText": "想你所想",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
 }
